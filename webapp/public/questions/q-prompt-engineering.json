@@ -1,0 +1,53 @@
+{
+  "category": "Prompt Engineering",
+  "questions": {
+    "Novice": [
+      "Define a 'system prompt' and explain how it differs from a 'user prompt'.",
+      "What is 'few-shot prompting' and give one example of when you'd use it?",
+      "Explain 'zero-shot prompting' and name one task where it works well.",
+      "What is 'chain-of-thought prompting' and how does it improve reasoning?",
+      "Define a 'prompt template' and explain why it's useful for consistency.",
+      "What are 'guardrails' in prompts and give one example of a safety guardrail?",
+      "Explain what 'prompt injection' is and why it's a security concern.",
+      "What is 'temperature' in LLM generation and how does it affect outputs?",
+      "Define 'role prompting' and give an example of assigning a role to an AI.",
+      "What is the difference between 'instructional' and 'conversational' prompt styles?"
+    ],
+    "Intermediate": [
+      "Design a prompt template that dynamically includes relevant examples based on user query type.",
+      "How would you structure a prompt to get consistent JSON output from an LLM?",
+      "Describe a technique to prevent prompt injection while maintaining conversational flexibility.",
+      "How would you create prompts that adapt their complexity based on the user's expertise level?",
+      "Design a multi-turn conversation prompt that maintains context while preventing topic drift.",
+      "Explain how to use 'constitutional AI' principles in prompt design for safety.",
+      "How would you implement A/B testing for different prompt variations in production?",
+      "Describe a strategy for handling edge cases and unexpected inputs in prompt templates.",
+      "How would you design prompts that work consistently across different LLM providers?",
+      "Explain techniques for reducing hallucination through careful prompt construction."
+    ],
+    "Expert": [
+      "Design a prompt optimization system that automatically improves prompts based on user feedback and success metrics.",
+      "Create a framework for compositional prompting that combines multiple specialized prompt modules.",
+      "How would you implement dynamic prompt compression to stay within context limits while preserving key information?",
+      "Design a system for personalized prompts that adapt to individual user preferences and communication styles.",
+      "Propose a method for automated prompt testing across diverse scenarios and edge cases.",
+      "How would you create prompts that maintain consistency across a multi-agent system with different specialized roles?",
+      "Design a prompt versioning and rollback system for production environments with safety guarantees.",
+      "Create a methodology for measuring prompt effectiveness beyond simple accuracy metrics.",
+      "How would you implement prompt caching and reuse strategies for commonly occurring patterns?",
+      "Design a system for collaborative prompt development with version control and peer review processes."
+    ],
+    "Master": [
+      "Architect a prompt management platform that serves prompts to hundreds of applications with microsecond latency requirements.",
+      "Design a governance framework for prompt approval, testing, and deployment in regulated industries.",
+      "Create a cost optimization model that balances prompt complexity with token usage across an enterprise.",
+      "Propose a strategy for prompt portability across different model architectures and providers.",
+      "Design a system for automatic prompt generation that creates specialized prompts for new use cases.",
+      "Architect a prompt analytics platform that provides insights into prompt performance and user satisfaction.",
+      "Create a compliance framework ensuring prompts meet industry regulations and ethical guidelines.",
+      "Design a prompt inheritance system where teams can extend and customize base organizational prompts.",
+      "Propose a methodology for prompt impact assessment on business metrics and user experience.",
+      "Architect a global prompt distribution system with regional customization and cultural sensitivity features."
+    ]
+  }
+} 

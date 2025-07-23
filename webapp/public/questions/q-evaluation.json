@@ -1,0 +1,53 @@
+{
+  "category": "Evaluation & Evals",
+  "questions": {
+    "Novice": [
+      "Define 'evaluation' in the context of AI systems and explain why it's important.",
+      "What is a 'benchmark' and name two popular benchmarks for language models?",
+      "Explain what 'LLM-as-judge' means and give one advantage of this approach.",
+      "What is the difference between 'automatic' and 'human' evaluation?",
+      "Define 'A/B testing' for AI features and explain what you're measuring.",
+      "What is 'ground truth' and why is it challenging to establish for generative AI?",
+      "Explain what 'red teaming' means in AI evaluation.",
+      "What is a 'holdout set' and why shouldn't you use your training data for evaluation?",
+      "Define 'inter-annotator agreement' and why it matters for human evaluation.",
+      "What is 'adversarial testing' and give one example of an adversarial prompt?"
+    ],
+    "Intermediate": [
+      "Design an evaluation framework for a customer support chatbot that balances accuracy and user satisfaction.",
+      "How would you create a custom benchmark for evaluating domain-specific AI models?",
+      "Describe a multi-metric evaluation system that captures both quality and safety concerns.",
+      "How would you implement continuous evaluation that monitors model performance in production?",
+      "Design an A/B testing framework that accounts for learning effects and user adaptation.",
+      "Explain how to evaluate AI systems when ground truth is subjective or doesn't exist.",
+      "How would you create evaluation datasets that represent diverse user populations and use cases?",
+      "Describe a technique for evaluating AI explanations and reasoning quality.",
+      "How would you design evaluation criteria for multi-turn conversations and context retention?",
+      "Explain how to measure and evaluate the cost-effectiveness of different AI approaches."
+    ],
+    "Expert": [
+      "Architect an evaluation platform that scales to test thousands of model variants across multiple metrics simultaneously.",
+      "Design a real-time evaluation system that detects model degradation and triggers automatic interventions.",
+      "Create a framework for evaluating AI systems across multiple modalities (text, image, audio) with unified metrics.",
+      "How would you implement causal evaluation to understand the impact of specific model improvements?",
+      "Design a human-in-the-loop evaluation system that efficiently combines automated and manual assessment.",
+      "Propose a methodology for evaluating AI fairness across different demographic groups and use cases.",
+      "How would you create evaluation pipelines that adapt to new tasks and domains without manual intervention?",
+      "Design a system for longitudinal evaluation that tracks model performance changes over time.",
+      "Create a framework for evaluating AI robustness against distribution shift and adversarial attacks.",
+      "How would you implement meta-evaluation to assess the quality and reliability of your evaluation methods?"
+    ],
+    "Master": [
+      "Architect a global evaluation infrastructure that coordinates testing across multiple data centers with regulatory compliance.",
+      "Design a governance model for evaluation standards that enables cross-team consistency while allowing innovation.",
+      "Create a cost-optimization framework that balances evaluation thoroughness with computational budgets at enterprise scale.",
+      "Propose a strategy for evaluation standardization across an industry while maintaining competitive advantages.",
+      "Design an evaluation platform that enables external researchers to benchmark against your models safely.",
+      "Architect a system for evaluation transparency that meets regulatory requirements while protecting trade secrets.",
+      "Create a framework for evaluation-driven product decisions that links technical metrics to business outcomes.",
+      "Design a next-generation evaluation platform that anticipates future AI capabilities and testing needs.",
+      "Propose a methodology for evaluation ethics that ensures testing doesn't perpetuate harmful biases.",
+      "Architect a disaster recovery plan for evaluation systems that ensures business continuity during critical testing periods."
+    ]
+  }
+} 

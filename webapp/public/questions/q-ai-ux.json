@@ -1,0 +1,53 @@
+{
+  "category": "AI UX & Interaction Design",
+  "questions": {
+    "Novice": [
+      "Define 'AI transparency' in user interfaces and give one example of transparent design.",
+      "What is 'uncertainty visualization' and why is it important for AI-powered features?",
+      "Explain 'user control' in AI systems and give an example of giving users control.",
+      "What is a 'fallback path' and why do AI features need them?",
+      "Define 'progressive disclosure' and how it applies to AI feature onboarding.",
+      "What is 'AI literacy' and how can design help users understand AI capabilities?",
+      "Explain 'feedback loops' in AI UX and why user feedback is valuable.",
+      "What is 'graceful degradation' when AI features fail or perform poorly?",
+      "Define 'anthropomorphism' in AI design and explain one risk of overusing it.",
+      "What is 'explainable AI' and how does it impact user interface design?"
+    ],
+    "Intermediate": [
+      "Design a user interface that clearly communicates AI confidence levels without overwhelming users.",
+      "How would you create an onboarding flow that sets appropriate expectations for AI capabilities?",
+      "Describe a design pattern for handling AI errors that maintains user trust and engagement.",
+      "How would you design AI features that adapt to different user expertise levels?",
+      "Create a framework for AI feature discoverability that doesn't clutter the interface.",
+      "How would you design feedback mechanisms that collect useful data for AI improvement?",
+      "Describe a design approach for AI-generated content that clearly indicates its artificial origin.",
+      "How would you create user controls for AI personalization that respect privacy concerns?",
+      "Design an interface pattern for AI suggestions that encourages critical evaluation.",
+      "How would you handle the transition between automated AI responses and human handoff?"
+    ],
+    "Expert": [
+      "Architect a design system for AI features that scales across multiple products while maintaining consistency.",
+      "Design a user research methodology specifically for understanding AI feature usability and trust.",
+      "Create a framework for measuring AI UX success that goes beyond traditional usability metrics.",
+      "How would you design AI interfaces that remain usable as models improve and capabilities change?",
+      "Design a system for AI bias communication that helps users understand potential limitations.",
+      "Create design patterns for collaborative AI where humans and AI work together on tasks.",
+      "How would you design AI features for accessibility, ensuring they work for users with diverse abilities?",
+      "Design a framework for AI feature testing that includes edge cases and failure scenarios.",
+      "Create design guidelines for AI-generated content moderation and review workflows.",
+      "How would you design AI interfaces that maintain user agency while leveraging automation benefits?"
+    ],
+    "Master": [
+      "Architect a global design language for AI that works across cultures while respecting local norms and expectations.",
+      "Design a methodology for AI UX governance that ensures consistent quality across an enterprise product portfolio.",
+      "Create a framework for AI design ethics that guides decisions about manipulation, persuasion, and user autonomy.",
+      "Propose a strategy for AI UX evolution that anticipates future AI capabilities and user expectations.",
+      "Design a platform for AI UX experimentation that enables safe testing of novel interaction paradigms.",
+      "Architect a system for AI design compliance that meets accessibility, privacy, and safety regulations.",
+      "Create a methodology for AI UX impact measurement that connects design decisions to business and social outcomes.",
+      "Design a framework for AI UX education that helps designers understand and work effectively with AI capabilities.",
+      "Propose a strategy for AI design standardization that balances consistency with innovation across the industry.",
+      "Architect a next-generation AI UX platform that enables new forms of human-AI collaboration and communication."
+    ]
+  }
+} 

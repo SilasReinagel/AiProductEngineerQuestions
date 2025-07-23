@@ -1,0 +1,53 @@
+{
+  "category": "Multimodal & Multilingual Integration",
+  "questions": {
+    "Novice": [
+      "Define 'multimodal AI' and give examples of two different modalities.",
+      "What is 'cross-modal understanding' and why is it challenging?",
+      "Explain 'machine translation' and name one popular translation service.",
+      "What is 'speech-to-text' and give one use case for this technology?",
+      "Define 'computer vision' and explain how it relates to multimodal AI.",
+      "What is 'language detection' and why might you need it in a global application?",
+      "Explain 'audio processing' and name one type of audio AI model.",
+      "What is 'image captioning' and how does it combine vision and language?",
+      "Define 'code-switching' and why it's relevant for multilingual AI.",
+      "What is 'modality alignment' and why is it important for multimodal models?"
+    ],
+    "Intermediate": [
+      "Design a system that combines text and image inputs to generate comprehensive responses.",
+      "How would you implement language detection and routing for a multilingual customer support bot?",
+      "Describe a pipeline for processing and indexing multilingual documents for search.",
+      "How would you create a voice interface that handles multiple languages and accents?",
+      "Design a system for automatic translation that preserves context and cultural nuances.",
+      "How would you implement image understanding that can describe scenes in multiple languages?",
+      "Describe a strategy for handling mixed-language inputs in a single conversation.",
+      "How would you create a multimodal content moderation system for images and text?",
+      "Design a system for real-time audio translation with low latency requirements.",
+      "How would you implement cross-modal search (e.g., finding images using text descriptions)?"
+    ],
+    "Expert": [
+      "Architect a multimodal AI platform that seamlessly processes text, image, audio, and video inputs at scale.",
+      "Design a multilingual model training pipeline that efficiently handles 100+ languages with varying data availability.",
+      "Create a framework for multimodal fusion that combines information from different modalities effectively.",
+      "How would you implement real-time multimodal translation for video conferences with multiple participants?",
+      "Design a system for multilingual content generation that maintains consistency across languages.",
+      "Create a framework for cross-modal retrieval that finds relevant content across different media types.",
+      "How would you implement multimodal personalization that adapts to user preferences across modalities?",
+      "Design a system for multimodal content synthesis that generates coordinated text, image, and audio outputs.",
+      "Create a framework for modality-specific quality assessment and confidence scoring.",
+      "How would you implement multimodal reasoning that combines evidence from different types of inputs?"
+    ],
+    "Master": [
+      "Architect a global multimodal platform that serves diverse markets with localized AI capabilities and cultural sensitivity.",
+      "Design a governance framework for multimodal AI that addresses copyright, privacy, and cultural representation concerns.",
+      "Create a cost-optimization model for multimodal processing that balances quality, latency, and resource usage across modalities.",
+      "Propose a strategy for multimodal AI evolution that anticipates future modalities and interaction paradigms.",
+      "Design a platform for multimodal AI safety that detects and prevents harmful content across all supported modalities.",
+      "Architect a system for multimodal accessibility that ensures AI systems work for users with diverse abilities and preferences.",
+      "Create a framework for multimodal data governance that handles the complexity of multi-jurisdictional compliance.",
+      "Design a methodology for multimodal AI impact assessment that considers cultural and linguistic diversity.",
+      "Propose a strategy for multimodal AI standardization that enables interoperability while preserving innovation.",
+      "Architect a next-generation multimodal platform that enables novel forms of human expression and communication."
+    ]
+  }
+} 

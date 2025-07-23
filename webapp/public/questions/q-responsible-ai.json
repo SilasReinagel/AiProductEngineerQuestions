@@ -1,0 +1,53 @@
+{
+  "category": "Responsible AI, Safety & Compliance",
+  "questions": {
+    "Novice": [
+      "Define 'bias' in AI systems and give one example of how it might manifest.",
+      "What is a 'toxicity filter' and why would you implement one?",
+      "Explain 'data governance' and name two important aspects of managing AI training data.",
+      "What is 'differential privacy' and how does it protect user data?",
+      "Define 'model transparency' and explain why it matters for trust.",
+      "What is 'algorithmic accountability' and who should be responsible for AI decisions?",
+      "Explain what 'GDPR compliance' means for AI systems processing EU citizen data.",
+      "What is 'red teaming' in the context of AI safety?",
+      "Define 'fairness' in AI and explain why it's challenging to achieve.",
+      "What is an 'AI ethics board' and what role does it play in organizations?"
+    ],
+    "Intermediate": [
+      "Design a bias detection system that monitors AI outputs for demographic disparities.",
+      "How would you implement consent management for AI systems that learn from user interactions?",
+      "Describe a framework for AI risk assessment that covers technical and societal risks.",
+      "How would you create audit trails for AI decision-making in regulated industries?",
+      "Design a system for AI model documentation that supports regulatory compliance.",
+      "Explain how to implement federated learning while maintaining privacy guarantees.",
+      "How would you create AI governance policies that balance innovation with safety?",
+      "Describe a methodology for measuring and improving AI system fairness across protected groups.",
+      "How would you implement data lineage tracking for AI training and inference?",
+      "Design a framework for AI incident response and remediation."
+    ],
+    "Expert": [
+      "Architect a comprehensive AI safety monitoring system that operates across multiple models and use cases.",
+      "Design a privacy-preserving AI platform that enables valuable insights while protecting individual data.",
+      "Create a framework for AI algorithmic auditing that can be validated by external regulators.",
+      "How would you implement automated bias mitigation that doesn't compromise model performance?",
+      "Design a system for AI explainability that provides meaningful insights to non-technical stakeholders.",
+      "Propose a methodology for AI impact assessment that considers long-term societal effects.",
+      "How would you create AI safety guidelines that scale across different model types and applications?",
+      "Design a framework for AI workforce transition planning that addresses job displacement concerns.",
+      "Create a system for AI content provenance that tracks the source and authenticity of generated content.",
+      "How would you implement AI rights management that respects intellectual property and licensing?"
+    ],
+    "Master": [
+      "Architect a global AI governance platform that coordinates compliance across multiple jurisdictions and regulatory frameworks.",
+      "Design a strategy for proactive AI regulation engagement that shapes policy while advancing innovation.",
+      "Create a comprehensive AI risk management framework that integrates with enterprise risk management systems.",
+      "Propose a methodology for AI social impact measurement that quantifies both benefits and harms.",
+      "Design an AI ethics-by-design platform that embeds responsible AI principles into development workflows.",
+      "Architect a system for AI transparency reporting that meets regulatory requirements while maintaining competitive advantage.",
+      "Create a framework for AI safety research coordination that enables industry-wide collaboration on critical safety challenges.",
+      "Design a strategy for AI liability and insurance that addresses emerging legal and financial risks.",
+      "Propose a methodology for AI democratic oversight that includes public participation in AI governance decisions.",
+      "Architect a next-generation responsible AI platform that anticipates future regulatory and ethical challenges."
+    ]
+  }
+} 

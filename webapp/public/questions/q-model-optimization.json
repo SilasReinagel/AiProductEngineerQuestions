@@ -1,0 +1,53 @@
+{
+  "category": "AI Model Selection & Optimization – Technical Lens",
+  "questions": {
+    "Novice": [
+      "Define fine-tuning in one sentence and name one scenario where it's preferable to prompt engineering.",
+      "What is quantization and how does it affect model size versus accuracy?",
+      "Explain the difference between LoRA and full fine-tuning in terms of computational cost.",
+      "What does VRAM stand for and why is it a constraint when deploying large models?",
+      "Define model distillation and give one reason you'd choose a distilled model over the original.",
+      "What is the difference between FP32, FP16, and INT8 precision in model weights?",
+      "Name two popular frameworks for running LLMs locally on consumer hardware.",
+      "What is a model checkpoint and why might you save multiple checkpoints during training?",
+      "Explain what 'inference time' means and one factor that significantly impacts it.",
+      "What is the trade-off between batch size and latency when serving a model?"
+    ],
+    "Intermediate": [
+      "Compare the memory requirements of running Llama-2-7B versus Llama-2-13B in 4-bit quantization.",
+      "Describe the technical process of creating a LoRA adapter for domain-specific fine-tuning.",
+      "How would you benchmark GPU utilization during inference to identify bottlenecks?",
+      "Explain gradient checkpointing and when you'd use it during large model training.",
+      "What is speculative decoding and how does it improve inference throughput?",
+      "Describe the technical implementation of model sharding across multiple GPUs.",
+      "How do you decide between GPTQ, GGML, and AWQ quantization methods for production deployment?",
+      "Outline the steps to convert a PyTorch model to ONNX for optimized inference.",
+      "What is knowledge distillation temperature and how does it affect the student model's performance?",
+      "Explain the difference between static and dynamic quantization in terms of accuracy preservation."
+    ],
+    "Expert": [
+      "Design a model optimization pipeline that reduces Mistral-7B inference latency by 50% while maintaining 95% of original quality.",
+      "Architect a distributed training setup for fine-tuning a 70B model across 8 A100 GPUs with gradient accumulation.",
+      "Propose a strategy to automatically select optimal quantization parameters based on target hardware constraints.",
+      "Design a model compilation flow using TensorRT that optimizes for both throughput and memory efficiency.",
+      "How would you implement progressive layer freezing during fine-tuning to prevent catastrophic forgetting?",
+      "Create a cost-performance matrix comparing different deployment strategies (A100 vs H100 vs CPU inference).",
+      "Outline a technique to measure and optimize the memory bandwidth utilization during large model inference.",
+      "Design a system to automatically benchmark model variants across different hardware configurations.",
+      "How would you implement custom CUDA kernels to optimize attention computation for your specific use case?",
+      "Propose a method to dynamically adjust model precision during inference based on input complexity."
+    ],
+    "Master": [
+      "Architect a model optimization platform that automatically fine-tunes, quantizes, and deploys models based on production traffic patterns.",
+      "Design a cost model that predicts optimal hardware allocation across training, fine-tuning, and inference workloads for a model lifecycle.",
+      "Create a governance framework for model versioning, A/B testing, and rollback strategies in a multi-model production environment.",
+      "Propose a strategy to migrate from cloud-based model serving to edge deployment while maintaining SLA compliance.",
+      "Design a system for automated hyperparameter optimization that balances model quality, training time, and compute cost.",
+      "Architect a platform that enables product teams to self-serve model optimization without deep ML expertise.",
+      "Create a roadmap for transitioning from third-party models to custom foundation models, including infrastructure and talent planning.",
+      "Design a compliance framework ensuring model optimization doesn't violate data residency or export control regulations.",
+      "Propose a methodology to benchmark and compare model performance across different AI accelerators (TPUs, Groq, Cerebras).",
+      "Architect a disaster recovery plan for model serving infrastructure that handles traffic spikes during major optimization deployments."
+    ]
+  }
+} 

@@ -1,0 +1,53 @@
+{
+  "category": "Agent Frameworks & Orchestration",
+  "questions": {
+    "Novice": [
+      "Define an “agent” in the context of LangChain or Semantic Kernel.",
+      "What is a “tool” (sometimes called an “action”) inside an agent framework, and why is it useful?",
+      "Name two popular open-source libraries you could adopt to orchestrate AI agents.",
+      "Give one reason to attach short-term memory to an agent conversation.",
+      "How does a deterministic tool-invocation step differ from an unconstrained LLM call?",
+      "What role does a prompt-template object play in building an agent chain?",
+      "Describe the difference between a sequential chain and a reactive (ReAct-style) chain.",
+      "List two pieces of metadata you would log from every agent step for basic observability.",
+      "Why might you throttle or rate-limit calls from an agent to its tools?",
+      "State one benefit of using an LLM function-calling API when wiring up an agent."
+    ],
+    "Intermediate": [
+      "Compare the ReAct agent pattern with the Plan-and-Execute pattern—when is each preferable?",
+      "Outline the steps to add a custom SQL-query tool into a LangChain agent.",
+      "How would you unit-test an agent chain that calls external REST APIs?",
+      "Describe a caching strategy for intermediate LLM calls inside a multi-tool agent loop.",
+      "Explain how you can inject guardrails to block unsafe tool usage in Semantic Kernel.",
+      "Design a fallback path for when an agent exceeds its maximum step count.",
+      "How do you persist conversational context across multiple invocations of the same agent?",
+      "Show how you’d route a user query between a knowledge-base agent and a math-calculator agent.",
+      "Discuss the latency impact of multi-step agent loops and one tactic to mitigate it.",
+      "In LlamaIndex, how can you swap the planner component without rewriting the executor code?"
+    ],
+    "Expert": [
+      "Architect an agent service that handles 100 QPS, each request potentially triggering multiple micro-service tools, while maintaining P95 latency under 500 ms.",
+      "Design a schema to store, replay, and visualize agent traces for post-mortem debugging.",
+      "Explain the trade-offs between synchronous and asynchronous tool invocation in a multi-agent environment.",
+      "Propose a strategy to embed vector search inside an agent’s reasoning loop without over-fetching context.",
+      "How would you isolate and sandbox untrusted code executed via an agent’s “python” tool?",
+      "Design a self-healing agent that retries with alternate tools upon failure and logs recovery metrics.",
+      "Compare buffer, summary, episodic, and vector-store memories for long-running agent sessions.",
+      "Present an approach to evaluate agent correctness automatically using an LLM-as-judge technique.",
+      "Discuss security implications of exposing internal micro-services as publicly callable agent tools.",
+      "Plan how to measure and reduce hallucination propagation across cooperative multi-agent workflows."
+    ],
+    "Master": [
+      "Draft a three-year roadmap to evolve from monolithic agent orchestrations to a modular service mesh supporting 100+ product teams.",
+      "Define governance policies for registering, versioning, and deprecating shared agent tools in an enterprise catalog.",
+      "Create a cost model that forecasts token, compute, and latency budgets for branching agent graphs across multiple products.",
+      "Recommend an organizational structure for an Agent Platform team that enables self-service pipelines while enforcing safety standards.",
+      "Devise a KPI framework linking business outcomes to agent performance, reliability, and explainability.",
+      "Advise the C-suite on a build-vs-buy decision for a proprietary agent-orchestration layer versus adopting open source.",
+      "Design a global disaster-recovery plan for agent systems that rely on a single LLM provider.",
+      "Propose a standard cross-agent communication protocol to enable cooperative workflows across domains.",
+      "Develop a compliance strategy that guarantees auditability of agent decisions under forthcoming AI regulations.",
+      "Architect an agent orchestration platform that integrates real-time streaming inputs, multimodal models, and edge deployment constraints."
+    ]
+  }
+}

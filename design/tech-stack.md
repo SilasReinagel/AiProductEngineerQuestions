@@ -2,12 +2,6 @@
 
 This project utilizes a modern and efficient tech stack for full-stack web development. Here's an overview of the key technologies and tools used:
 
-## Backend
-- **Node.js**: JavaScript runtime for server-side development
-- **Express**: Web application framework for Node.js
-- **SQLite**: Lightweight, serverless database for data storage
-- **OpenAI/Anthropic APIs**: Integration for AI capabilities
-
 ## Frontend
 - **React**: JavaScript library for building user interfaces
 - **Vite**: Next-generation frontend tooling for fast development and building

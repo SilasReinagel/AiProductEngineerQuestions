@@ -1,0 +1,53 @@
+{
+  "category": "AI Model & API Selection – Product Lens",
+  "questions": {
+    "Novice": [
+      "Name three high-level factors you’d weigh before choosing between an external LLM API and a rules-based alternative.",
+      "In one sentence, what is a token in LLM pricing and why does it matter to product budgeting?",
+      "Briefly define latency, throughput, and uptime from a user’s perspective.",
+      "What is a model’s context window and how might it limit the design of a chat feature?",
+      "When comparing two model vendors, which public document would you read first—and what are you looking for?",
+      "Give an example of a user-facing task where accuracy matters more than raw speed.",
+      "Explain the term rate-limit in model APIs and one way it could derail a product launch.",
+      "List two privacy checks you must perform before sending user data to an external model API.",
+      "What’s the difference between a beta and a generally-available model release, and how does that affect risk?",
+      "If an LLM sometimes produces incorrect facts, name one simple UX element you’d add to help users manage that risk."
+    ],
+    "Intermediate": [
+      "How would you articulate the user-visible benefit of switching from GPT-3.5 to GPT-4o if the per-call cost triples?",
+      "List the top five business metrics you examine before testing any third-party model and explain why.",
+      "Describe a time when vendor lock-in became a strategic risk—how did you communicate that to leadership?",
+      "If privacy-conscious enterprise clients demand on-prem inference, which open-source models would you shortlist and why?",
+      "You have 48 hours to prototype a feature for a conference demo. Which hosted model/API do you pick and why?",
+      "How do you decide between buying synthetic-data credits and purchasing higher context limits for a summarization tool?",
+      "Our legal team flags potential IP risks with image-generation models. What product paths can still ship next quarter?",
+      "Describe how you’d position open-weight fine-tuning as a selling point in the marketing launch plan.",
+      "Explain how content-moderation obligations change your model choice for a kids’ edu-app versus a finance chatbot.",
+      "Which privacy certifications (e.g., ISO 27001, SOC 2) carry the most weight in procurement decisions, and why?"
+    ],
+    "Expert": [
+      "Walk me through a framework you’ve used to score vendors on latency versus locality (US vs. EU hosting) while meeting GDPR.",
+      "Our mobile app tolerates only 250 ms P95. Which trade-offs do you accept first—smaller context, lower-quality model, or edge caching?",
+      "What early signals tell you a model’s roadmap velocity will outpace competitors and justify a premium today?",
+      "How do you quantify hallucination cost in dollars or churn risk when comparing two models of similar accuracy?",
+      "Explain the product impact of model version drift on longitudinal A/B tests and how you’d mitigate it contractually.",
+      "Outline the kill-switch criteria you’d embed in a service-level agreement to pause usage if toxicity spikes.",
+      "Describe a win-win pricing negotiation you ran with a model vendor—what levers did you pull beyond per-token rates?",
+      "Which competitive moat does choosing a proprietary model give you—and where does it harm portability?",
+      "Draft KPIs for a model bake-off that balances UX joy, infra cost, and support maturity.",
+      "If latency doubles in APAC after moving to a cheaper US-East endpoint, how do you quantify the revenue impact?"
+    ],
+    "Master": [
+      "Draft the one-pager you’d give Finance to justify a $500 k annual commit to a new LLM vendor.",
+      "A strategic partner offers equity for exclusivity on their new model. What product questions do you ask first?",
+      "Craft the executive brief comparing Anthropic’s RLHF roadmap to Google’s, focusing only on product implications.",
+      "Looking 12 months out, which market signals would trigger revisiting every model contract in our stack?",
+      "Design a multi-year vendor-diversification strategy balancing innovation access, cost leverage, and geopolitical risk.",
+      "Create a governance model that aligns 15 product teams on a unified model-evaluation rubric with clear decision rights.",
+      "Present a playbook for renegotiating model licensing fees after usage grows 10× while maintaining partner goodwill.",
+      "Outline an enterprise-wide risk-mitigation plan for sudden policy changes (e.g., EU AI Act) affecting model residency.",
+      "Propose a strategy to monetize aggregated model-usage data as competitive advantage while respecting privacy regulations.",
+      "Architect a roadmap to transition from closed-source models to in-house foundation-model development, including CapEx and hiring."
+    ]
+  }
+}

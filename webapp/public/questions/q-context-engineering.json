@@ -1,0 +1,53 @@
+{
+  "category": "Context Engineering",
+  "questions": {
+    "Novice": [
+      "Define 'context window' and explain why it's a limitation for long conversations.",
+      "What is 'chunking' in document processing and why is chunk size important?",
+      "Explain what an 'embedding' represents and how it captures semantic meaning.",
+      "What is 'session memory' and how does it differ from conversation history?",
+      "Define 'context compression' and give one reason why you might need it.",
+      "What is 'sliding window' attention and how does it help with long sequences?",
+      "Explain 'personalization' in AI context and give one example of personalized context.",
+      "What is the difference between 'semantic' and 'syntactic' similarity in embeddings?",
+      "Define 'context prioritization' and explain why not all context is equally important.",
+      "What is 'context overflow' and how might it affect AI responses?"
+    ],
+    "Intermediate": [
+      "Design a chunking strategy for technical documentation that preserves code examples and explanations together.",
+      "How would you implement context summarization to maintain conversation continuity beyond token limits?",
+      "Describe a technique for hierarchical context organization from document to paragraph to sentence level.",
+      "How would you handle context updates when underlying documents change frequently?",
+      "Design a system to automatically determine optimal context length based on query complexity.",
+      "Explain how to implement context caching to reduce redundant processing in multi-turn conversations.",
+      "How would you merge personal context with general knowledge while avoiding conflicts?",
+      "Describe a strategy for context deduplication when similar information appears in multiple sources.",
+      "How would you implement context relevance scoring to include only the most pertinent information?",
+      "Design a system for context versioning that tracks changes and enables rollback capabilities."
+    ],
+    "Expert": [
+      "Architect a context management system that handles millions of concurrent sessions with sub-second context retrieval.",
+      "Design a multi-modal context integration system that combines text, images, and structured data seamlessly.",
+      "Propose a technique for context interpolation that fills gaps between discrete information pieces.",
+      "How would you implement context-aware personalization that respects privacy while maximizing relevance?",
+      "Design a system for contextual conflict resolution when contradictory information exists.",
+      "Create a framework for context quality assessment that automatically identifies and filters low-value information.",
+      "How would you implement adaptive context strategies that adjust based on user behavior patterns?",
+      "Design a context migration system for upgrading to models with different context window sizes.",
+      "Propose a method for context-driven model selection where different models handle different context types.",
+      "How would you implement real-time context analysis to detect and respond to context drift?"
+    ],
+    "Master": [
+      "Architect a planetary-scale context platform that serves personalized context across global regions with data sovereignty compliance.",
+      "Design a context economics model that optimizes for relevance, latency, and cost across enterprise applications.",
+      "Create a governance framework for context data lifecycle management including retention, archival, and deletion policies.",
+      "Propose a strategy for context federation that enables secure context sharing across organizational boundaries.",
+      "Design a context intelligence system that predicts future context needs and pre-loads relevant information.",
+      "Architect a context platform that enables seamless handoffs between human and AI agents while preserving full context.",
+      "Create a compliance framework for context handling that meets GDPR, CCPA, and industry-specific regulations.",
+      "Design a context disaster recovery system that ensures business continuity during outages.",
+      "Propose a methodology for context ROI measurement that links context quality to business outcomes.",
+      "Architect a next-generation context platform that anticipates and adapts to emerging AI model architectures."
+    ]
+  }
+} 

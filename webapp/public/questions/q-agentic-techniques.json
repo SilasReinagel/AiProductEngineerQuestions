@@ -1,0 +1,53 @@
+{
+  "category": "Agentic Techniques",
+  "questions": {
+    "Novice": [
+      "Define 'planning' in the context of AI agents and give one example of a planning technique.",
+      "What is 'reflection' in agent systems and why might it improve performance?",
+      "Explain what a 'tool invocation' means and name two types of tools an agent might use.",
+      "What is a 'self-healing loop' and how does it differ from a simple retry mechanism?",
+      "Define 'multi-agent collaboration' and give one scenario where it's beneficial.",
+      "What is the difference between sequential and parallel tool execution in agents?",
+      "Explain what 'chain-of-thought' prompting is and how it relates to agent reasoning.",
+      "What is an 'agent state' and why might you need to persist it between interactions?",
+      "Define 'goal decomposition' in agent planning and give a simple example.",
+      "What is the purpose of an 'agent controller' or 'orchestrator' in multi-agent systems?"
+    ],
+    "Intermediate": [
+      "Compare tree-of-thoughts versus chain-of-thought reasoning for complex problem solving.",
+      "Describe how you would implement error recovery in an agent that calls unreliable external APIs.",
+      "How would you design a voting mechanism for agents to reach consensus on conflicting outputs?",
+      "Explain the trade-offs between reactive agents (ReAct) and proactive planning agents.",
+      "Design a system where multiple agents can share and update a common knowledge base.",
+      "How would you implement timeout handling and graceful degradation in agent tool calls?",
+      "Describe a technique for dynamically selecting which agent should handle a given task.",
+      "How would you prevent infinite loops in agent reasoning while maintaining thoroughness?",
+      "Outline a strategy for load balancing across multiple instances of the same agent type.",
+      "Explain how you would implement hierarchical agent structures with delegation patterns."
+    ],
+    "Expert": [
+      "Design a meta-agent system that automatically optimizes other agents' prompts based on performance feedback.",
+      "Architect a solution for agents to learn from each other's successful strategies without centralized training.",
+      "Propose a technique for agents to negotiate resource allocation when competing for limited API quotas.",
+      "Design a system where agents can spawn sub-agents dynamically based on task complexity.",
+      "How would you implement semantic routing between specialized agents based on query understanding?",
+      "Create a framework for agents to build and maintain their own tool libraries through experimentation.",
+      "Design a conflict resolution mechanism when multiple agents produce contradictory results.",
+      "Propose a method for agents to estimate their own confidence and defer to more specialized agents.",
+      "How would you implement agent memory that combines episodic, semantic, and procedural knowledge?",
+      "Design a system for agents to collaboratively maintain and update a shared world model."
+    ],
+    "Master": [
+      "Architect a multi-agent platform that scales from dozens to thousands of agents while maintaining coordination efficiency.",
+      "Design a governance model for agent behavior in enterprise environments with compliance and audit requirements.",
+      "Create a cost optimization framework that dynamically allocates agent resources based on business priority and ROI.",
+      "Propose a strategy for agents to develop emergent behaviors while maintaining predictability and safety bounds.",
+      "Design a system for real-time agent performance monitoring with automatic intervention capabilities.",
+      "Architect a platform enabling non-technical users to compose and deploy agent workflows through visual interfaces.",
+      "Create a framework for agent capability discovery and automatic composition for novel tasks.",
+      "Design a multi-tenant agent platform with isolation guarantees and resource fair-sharing.",
+      "Propose a methodology for agents to explain their reasoning and decisions for regulatory compliance.",
+      "Architect a global agent network that operates across multiple cloud providers with latency optimization."
+    ]
+  }
+} 

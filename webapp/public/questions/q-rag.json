@@ -1,0 +1,53 @@
+{
+  "category": "Retrieval-Augmented Generation (RAG)",
+  "questions": {
+    "Novice": [
+      "Define retrieval-augmented generation in one sentence.",
+      "Explain why embeddings are used instead of exact keyword matches in most RAG systems.",
+      "What is a vector database and how does it differ from a traditional relational database?",
+      "In the context of RAG, what is a ‘chunk’ and why do we split documents into them?",
+      "Name two popular open-source libraries that help build RAG pipelines.",
+      "What does the acronym ‘k-NN’ stand for and how is it related to RAG search?",
+      "Give one reason you might store the original document URL alongside each vector.",
+      "Briefly describe what an embedding model outputs.",
+      "Why can very large context windows reduce—but not eliminate—the need for retrieval?",
+      "Name one simple metric for checking if retrieved passages are relevant to a user query."
+    ],
+    "Intermediate": [
+      "Compare cosine similarity and dot-product similarity for vector search—when would you prefer each?",
+      "Describe a strategy for deciding optimal chunk size when indexing product FAQs.",
+      "Outline the steps to keep embeddings fresh when the content repository updates hourly.",
+      "How would you combine BM25 and dense-vector search to improve recall?",
+      "What latency budget (in ms) do you target for retrieval if the overall response SLA is 700 ms, and why?",
+      "Explain the trade-offs between passage re-ranking with a small transformer versus returning top-k raw results.",
+      "Show how you would calculate ‘hit rate@k’ in an offline evaluation of a RAG system.",
+      "When users submit follow-up questions in the same session, how can you reuse previous retrieval results?",
+      "Describe one way to store metadata filters (e.g., language, region) alongside vectors for conditional retrieval.",
+      "Explain how you would A/B-test two different embedding models without impacting live users."
+    ],
+    "Expert": [
+      "Design a RAG pipeline that supports real-time document updates with < 2 s freshness while serving 100 QPS.",
+      "Propose an architecture for hybrid multi-vector indexing that separates short-form and long-form chunks.",
+      "How would you detect ‘information collisions’—conflicting passages retrieved for the same query—and resolve them before generation?",
+      "Draft a monitoring dashboard schema that surfaces anomalies in retrieval latency, embedding drift, and context-irrelevance rates.",
+      "Given a multilingual corpus, outline a strategy to serve global queries without duplicating the full index per language.",
+      "Describe how you would integrate personalized embeddings (per user) while containing index-size growth.",
+      "Explain the security implications of storing proprietary documents in a managed vector DB SaaS provider.",
+      "Recommend a fallback mechanism for zero-hit queries that maintains answer quality.",
+      "How would you benchmark trade-offs between larger embedding dimension (e.g., 1536 → 3072) and retrieval speed on CPU-only hardware?",
+      "Present a technique to align retrieval granularity with summarization length limits in the downstream LLM."
+    ],
+    "Master": [
+      "Create a two-year roadmap to evolve a monolithic RAG MVP into a planet-scale, multi-tenant platform supporting 10 K QPS and < 300 ms P95 latency.",
+      "Propose governance policies for embedding PII and sensitive enterprise data while enabling cross-team index reuse.",
+      "Architect a budget model forecasting GPU, storage, and egress costs as the corpus grows 10× in the next 12 months.",
+      "Define success metrics and escalation playbooks for retrieval-driven hallucinations that appear in < 0.1 % of responses but carry high legal risk.",
+      "Design a zero-downtime migration plan from FAISS-based indices to a proprietary approximate-nearest-neighbor service offered by your cloud vendor.",
+      "Recommend an organizational structure (roles, responsibilities, tooling) for 15 product teams to share a unified RAG platform without bottlenecks.",
+      "Present a strategy to incorporate user click-through data as weak supervision to automatically re-rank future retrievals.",
+      "Outline how you would extend a text-only RAG system to support multimodal (image + text) queries and sources within six months.",
+      "Formulate an experimentation framework that simultaneously optimizes retrieval relevance, generation quality, and cost at scale using multi-objective Bayesian optimization.",
+      "Advise the C-suite on build-vs-buy trade-offs for a sovereign vector database in light of emerging geo-sovereignty regulations."
+    ]
+  }
+}

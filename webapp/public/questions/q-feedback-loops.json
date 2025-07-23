@@ -1,0 +1,53 @@
+{
+  "category": "Feedback-Loop & Data Pipeline Design",
+  "questions": {
+    "Novice": [
+      "Define 'closed-loop learning' and explain why it's valuable for AI systems.",
+      "What is the difference between 'implicit' and 'explicit' user feedback?",
+      "Explain 'data labeling' and why it's important for improving AI models.",
+      "What is a 'feedback pipeline' and name two types of data it might collect.",
+      "Define 'continuous improvement' in the context of AI systems.",
+      "What is 'human-in-the-loop' and give one example of when you'd use it?",
+      "Explain 'data drift' and how feedback loops can help detect it.",
+      "What is 'active learning' and how does it reduce labeling costs?",
+      "Define 'data quality' and name two metrics you might track.",
+      "What is 'model retraining' and when might you trigger it based on feedback?"
+    ],
+    "Intermediate": [
+      "Design a feedback collection system that balances user experience with data quality needs.",
+      "How would you implement feedback aggregation that handles conflicting user opinions?",
+      "Describe a pipeline for processing real-time user interactions to improve model performance.",
+      "How would you create a labeling workflow that ensures consistency across multiple annotators?",
+      "Design a system for feedback prioritization that focuses on the most impactful improvements.",
+      "How would you implement feedback validation to filter out noise and malicious inputs?",
+      "Describe a strategy for incremental model updates based on continuous feedback.",
+      "How would you create feedback loops that adapt to changing user preferences over time?",
+      "Design a system for feedback analytics that identifies patterns and improvement opportunities.",
+      "How would you implement feedback-driven personalization while protecting user privacy?"
+    ],
+    "Expert": [
+      "Architect a feedback infrastructure that scales to millions of daily interactions while maintaining real-time processing.",
+      "Design a multi-modal feedback system that integrates text, behavioral, and contextual signals.",
+      "Create a framework for feedback quality assessment that automatically identifies and handles poor-quality data.",
+      "How would you implement causal inference in feedback loops to understand true model improvement drivers?",
+      "Design a system for distributed feedback collection across multiple touchpoints and applications.",
+      "Create a methodology for feedback-driven A/B testing that optimizes for long-term model performance.",
+      "How would you implement federated feedback learning that preserves privacy while enabling model improvement?",
+      "Design a framework for feedback loop monitoring that detects and prevents feedback manipulation attacks.",
+      "Create a system for automated feedback processing that reduces human labeling overhead.",
+      "How would you implement cross-domain feedback transfer to improve models in data-sparse areas?"
+    ],
+    "Master": [
+      "Architect a global feedback platform that coordinates learning across multiple products and regions while respecting data sovereignty.",
+      "Design a governance model for feedback data that balances model improvement with user rights and regulatory compliance.",
+      "Create a cost-optimization framework for feedback operations that maximizes learning value while minimizing operational overhead.",
+      "Propose a strategy for feedback-driven platform evolution that anticipates future AI capabilities and user needs.",
+      "Design a framework for feedback loop ethics that ensures user data is used responsibly for model improvement.",
+      "Architect a system for feedback interoperability that enables learning transfer across different AI platforms and vendors.",
+      "Create a methodology for feedback ROI measurement that connects data collection costs to model performance improvements.",
+      "Design a platform for collaborative feedback that enables industry-wide cooperation on shared challenges while maintaining competitive advantages.",
+      "Propose a strategy for feedback loop resilience that maintains learning capabilities during system failures and attacks.",
+      "Architect a next-generation feedback platform that enables novel forms of human-AI collaboration and co-evolution."
+    ]
+  }
+} 

@@ -1,0 +1,53 @@
+{
+  "category": "Rapid Prototyping with AI Tools",
+  "questions": {
+    "Novice": [
+      "Define 'rapid prototyping' in the context of AI development and explain its benefits.",
+      "What is a 'copilot IDE' and name two popular examples?",
+      "Explain 'low-code' and 'no-code' platforms and how they accelerate AI development.",
+      "What is 'prompt-based development' and give one example of building features with prompts?",
+      "Define 'AI-assisted coding' and explain how it differs from traditional programming.",
+      "What is a 'minimum viable product' (MVP) and how do AI tools help create them faster?",
+      "Explain 'iterative development' and why it's important for AI prototyping.",
+      "What is 'API-first development' and how does it enable rapid AI integration?",
+      "Define 'boilerplate code' and how AI tools can generate it automatically.",
+      "What is 'synthetic data generation' and when might you use it for prototyping?"
+    ],
+    "Intermediate": [
+      "Design a rapid prototyping workflow that combines AI code generation with human review and testing.",
+      "How would you use AI tools to quickly generate and test multiple UI/UX variations for an AI feature?",
+      "Describe a strategy for rapid API prototyping using AI-generated endpoints and mock data.",
+      "How would you implement rapid A/B testing for AI-generated features and content?",
+      "Design a workflow for rapid documentation generation that keeps pace with fast development cycles.",
+      "How would you use AI tools to rapidly generate test cases and validation scenarios?",
+      "Describe a process for rapid model experimentation using pre-trained models and fine-tuning.",
+      "How would you create rapid feedback loops between prototypes and stakeholder reviews?",
+      "Design a system for rapid deployment and rollback of AI prototype features.",
+      "How would you use AI tools to rapidly generate training data for custom models?"
+    ],
+    "Expert": [
+      "Architect a rapid prototyping platform that enables non-technical teams to create AI-powered applications.",
+      "Design a system for automated prototype evaluation that measures performance, cost, and user experience.",
+      "Create a framework for rapid scaling from prototype to production with minimal code rewriting.",
+      "How would you implement rapid security and compliance validation for AI prototypes?",
+      "Design a collaborative prototyping environment that enables real-time cooperation between technical and non-technical team members.",
+      "Create a methodology for rapid competitive analysis and benchmarking using AI tools.",
+      "How would you implement rapid personalization prototyping that adapts features to different user segments?",
+      "Design a system for rapid integration testing between AI prototypes and existing systems.",
+      "Create a framework for rapid cost estimation and optimization during the prototyping phase.",
+      "How would you implement rapid user research and feedback collection for AI prototype validation?"
+    ],
+    "Master": [
+      "Architect an enterprise rapid prototyping platform that scales across hundreds of teams while maintaining governance and quality standards.",
+      "Design a strategy for rapid prototyping governance that balances innovation speed with compliance and risk management.",
+      "Create a cost-optimization framework for rapid prototyping that maximizes experimentation while controlling expenses.",
+      "Propose a methodology for rapid prototyping ROI measurement that connects prototype development to business outcomes.",
+      "Design a platform for collaborative rapid prototyping that enables external partners and customers to contribute to development.",
+      "Architect a system for rapid prototyping analytics that provides insights into development patterns and success factors.",
+      "Create a framework for rapid prototyping knowledge management that captures and shares best practices across the organization.",
+      "Design a strategy for rapid prototyping talent development that upskills teams to leverage AI tools effectively.",
+      "Propose a methodology for rapid prototyping portfolio management that prioritizes experiments and allocates resources optimally.",
+      "Architect a next-generation rapid prototyping platform that anticipates future AI tools and development paradigms."
+    ]
+  }
+} 
