@@ -169,6 +169,9 @@ function AcademicApp() {
           <p className="text-xs text-gray-400 mt-2">
             For interview preparation, hiring decisions, and skill development in AI product engineering.
           </p>
+          <p className="text-xs text-gray-400 mt-3">
+            Site by <a href="https://silasreinagel.com" target="_blank" rel="noopener noreferrer" className="text-gray-300 hover:text-white underline">Silas Reinagel</a>
+          </p>
         </div>
       </footer>
     </div>
