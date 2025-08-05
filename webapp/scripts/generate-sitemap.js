@@ -6,25 +6,25 @@ import { fileURLToPath } from 'url'
 const __filename = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(__filename)
 
-// Configuration
-const SITE_URL = 'https://ai-interview-guide.com'
+// Configuration - use environment variable or default to canonical domain
+const SITE_URL = process.env.SITE_URL || 'https://aiproductengineerinterview.com'
 const OUTPUT_PATH = path.join(__dirname, '../public/sitemap.xml')
 
-// Category slugs from our categoryOrder.js config
-const CATEGORY_SLUGS = [
+// Category URL mappings - clean URLs for better SEO
+const CATEGORY_URLS = [
   'prompt-engineering',
   'context-engineering', 
   'ai-agent-engineering',
-  'retrieval-augmented-generation-rag',
-  'ai-model-api-selection-product-lens',
+  'rag',
+  'model-selection',
   'agentic-techniques',
   'model-optimization',
-  'ai-system-evaluation',
+  'evaluation',
   'responsible-ai',
-  'ai-ux-design',
+  'ai-ux',
   'feedback-loops',
   'rapid-prototyping',
-  'multimodal-ai'
+  'multimodal'
 ]
 
 /**
@@ -43,13 +43,13 @@ function generateSitemap() {
     <priority>1.0</priority>
   </url>`
 
-  // Add category pages (these would be the domain-specific question views)
-  CATEGORY_SLUGS.forEach(slug => {
+  // Add category pages with clean URLs
+  CATEGORY_URLS.forEach(categoryUrl => {
     sitemap += `
   
-  <!-- Category: ${slug} -->
+  <!-- Category: ${categoryUrl} -->
   <url>
-    <loc>${SITE_URL}/?category=${encodeURIComponent(slug)}</loc>
+    <loc>${SITE_URL}/${categoryUrl}</loc>
     <lastmod>${currentDate}</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -78,7 +78,9 @@ function writeSitemap() {
     
     fs.writeFileSync(OUTPUT_PATH, sitemapContent, 'utf8')
     console.log(`✅ Sitemap generated successfully at: ${OUTPUT_PATH}`)
-    console.log(`📄 Sitemap contains ${CATEGORY_SLUGS.length + 1} URLs`)
+    console.log(`🌐 Site URL: ${SITE_URL}`)
+    console.log(`📄 Sitemap contains ${CATEGORY_URLS.length + 1} URLs`)
+    console.log(`🔗 Clean URLs: /${CATEGORY_URLS.join(', /')}`)
     
   } catch (error) {
     console.error('❌ Error generating sitemap:', error)

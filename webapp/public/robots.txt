@@ -2,7 +2,7 @@ User-agent: *
 Allow: /
 
 # Sitemaps
-Sitemap: https://ai-interview-guide.com/sitemap.xml
+Sitemap: https://aiproductengineerinterview.com/sitemap.xml
 
 # Crawl-delay for respectful crawling
 Crawl-delay: 1

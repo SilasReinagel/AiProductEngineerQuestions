@@ -1,0 +1,179 @@
+[build]
+  # Directory with the package.json file
+  base = "webapp"
+  
+  # Directory to publish (dist is Vite's default output)
+  publish = "dist"
+  
+  # Build command
+  command = "npm run build"
+
+[build.environment]
+  # Node.js version
+  NODE_VERSION = "18"
+  
+  # NPM version (optional, uses default if not specified)
+  NPM_VERSION = "9"
+
+# Category-specific redirects - Clean URLs for each domain
+[[redirects]]
+  from = "/prompt-engineering"
+  to = "/?category=prompt-engineering"
+  status = 200
+
+[[redirects]]
+  from = "/context-engineering"
+  to = "/?category=context-engineering"
+  status = 200
+
+[[redirects]]
+  from = "/ai-agent-engineering"
+  to = "/?category=ai-agent-engineering"
+  status = 200
+
+[[redirects]]
+  from = "/rag"
+  to = "/?category=retrieval-augmented-generation-rag"
+  status = 200
+
+[[redirects]]
+  from = "/retrieval-augmented-generation"
+  to = "/?category=retrieval-augmented-generation-rag"
+  status = 200
+
+[[redirects]]
+  from = "/model-selection"
+  to = "/?category=ai-model-api-selection-product-lens"
+  status = 200
+
+[[redirects]]
+  from = "/ai-model-selection"
+  to = "/?category=ai-model-api-selection-product-lens"
+  status = 200
+
+[[redirects]]
+  from = "/agentic-techniques"
+  to = "/?category=agentic-techniques"
+  status = 200
+
+[[redirects]]
+  from = "/model-optimization"
+  to = "/?category=model-optimization"
+  status = 200
+
+[[redirects]]
+  from = "/evaluation"
+  to = "/?category=ai-system-evaluation"
+  status = 200
+
+[[redirects]]
+  from = "/ai-evaluation"
+  to = "/?category=ai-system-evaluation"
+  status = 200
+
+[[redirects]]
+  from = "/responsible-ai"
+  to = "/?category=responsible-ai"
+  status = 200
+
+[[redirects]]
+  from = "/ai-ethics"
+  to = "/?category=responsible-ai"
+  status = 200
+
+[[redirects]]
+  from = "/ai-ux"
+  to = "/?category=ai-ux-design"
+  status = 200
+
+[[redirects]]
+  from = "/ai-ux-design"
+  to = "/?category=ai-ux-design"
+  status = 200
+
+[[redirects]]
+  from = "/feedback-loops"
+  to = "/?category=feedback-loops"
+  status = 200
+
+[[redirects]]
+  from = "/rapid-prototyping"
+  to = "/?category=rapid-prototyping"
+  status = 200
+
+[[redirects]]
+  from = "/multimodal"
+  to = "/?category=multimodal-ai"
+  status = 200
+
+[[redirects]]
+  from = "/multimodal-ai"
+  to = "/?category=multimodal-ai"
+  status = 200
+
+# SPA redirect - all other routes should serve index.html
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+# Security headers
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Security headers
+    X-Frame-Options = "DENY"
+    X-Content-Type-Options = "nosniff"
+    X-XSS-Protection = "1; mode=block"
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    
+    # Cache control for static assets
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Specific cache headers for HTML
+[[headers]]
+  for = "*.html"
+  [headers.values]
+    Cache-Control = "public, max-age=0, must-revalidate"
+
+# Cache headers for sitemap and robots
+[[headers]]
+  for = "/sitemap.xml"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "application/xml"
+
+[[headers]]
+  for = "/robots.txt"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+    Content-Type = "text/plain"
+
+# Gzip compression for better performance
+[[headers]]
+  for = "*.js"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.css"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# Favicon and icon caching
+[[headers]]
+  for = "*.ico"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "*.png"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+# JSON files (question data)
+[[headers]]
+  for = "*.json"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
+    Content-Type = "application/json" 

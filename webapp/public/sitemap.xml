@@ -2,7 +2,7 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <!-- Main Landing Page -->
   <url>
-    <loc>https://ai-interview-guide.com/</loc>
+    <loc>https://aiproductengineerinterview.com/</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>weekly</changefreq>
     <priority>1.0</priority>
@@ -10,7 +10,7 @@
   
   <!-- Category: prompt-engineering -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=prompt-engineering</loc>
+    <loc>https://aiproductengineerinterview.com/prompt-engineering</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -18,7 +18,7 @@
   
   <!-- Category: context-engineering -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=context-engineering</loc>
+    <loc>https://aiproductengineerinterview.com/context-engineering</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -26,23 +26,23 @@
   
   <!-- Category: ai-agent-engineering -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=ai-agent-engineering</loc>
+    <loc>https://aiproductengineerinterview.com/ai-agent-engineering</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Category: retrieval-augmented-generation-rag -->
+  <!-- Category: rag -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=retrieval-augmented-generation-rag</loc>
+    <loc>https://aiproductengineerinterview.com/rag</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Category: ai-model-api-selection-product-lens -->
+  <!-- Category: model-selection -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=ai-model-api-selection-product-lens</loc>
+    <loc>https://aiproductengineerinterview.com/model-selection</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -50,7 +50,7 @@
   
   <!-- Category: agentic-techniques -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=agentic-techniques</loc>
+    <loc>https://aiproductengineerinterview.com/agentic-techniques</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -58,15 +58,15 @@
   
   <!-- Category: model-optimization -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=model-optimization</loc>
+    <loc>https://aiproductengineerinterview.com/model-optimization</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Category: ai-system-evaluation -->
+  <!-- Category: evaluation -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=ai-system-evaluation</loc>
+    <loc>https://aiproductengineerinterview.com/evaluation</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -74,15 +74,15 @@
   
   <!-- Category: responsible-ai -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=responsible-ai</loc>
+    <loc>https://aiproductengineerinterview.com/responsible-ai</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Category: ai-ux-design -->
+  <!-- Category: ai-ux -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=ai-ux-design</loc>
+    <loc>https://aiproductengineerinterview.com/ai-ux</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -90,7 +90,7 @@
   
   <!-- Category: feedback-loops -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=feedback-loops</loc>
+    <loc>https://aiproductengineerinterview.com/feedback-loops</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
@@ -98,15 +98,15 @@
   
   <!-- Category: rapid-prototyping -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=rapid-prototyping</loc>
+    <loc>https://aiproductengineerinterview.com/rapid-prototyping</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   
-  <!-- Category: multimodal-ai -->
+  <!-- Category: multimodal -->
   <url>
-    <loc>https://ai-interview-guide.com/?category=multimodal-ai</loc>
+    <loc>https://aiproductengineerinterview.com/multimodal</loc>
     <lastmod>2025-08-05</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
