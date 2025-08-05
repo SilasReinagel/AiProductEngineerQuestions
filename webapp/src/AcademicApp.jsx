@@ -118,18 +118,44 @@ function AcademicApp() {
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
 
+  // Handle URL parameters for direct category access (SEO/sitemap support)
+  useEffect(() => {
+    const urlParams = new URLSearchParams(window.location.search)
+    const categoryParam = urlParams.get('category')
+    
+    if (categoryParam && categories[categoryParam]) {
+      setSelectedTopic(categoryParam)
+      setShowLanding(false)
+    }
+  }, [categories])
+
   const handleSelectCategory = (categorySlug) => {
     setSelectedTopic(categorySlug)
     setShowLanding(false)
+    
+    // Update URL for better SEO and bookmarkability
+    const newUrl = new URL(window.location.href)
+    newUrl.searchParams.set('category', categorySlug)
+    window.history.pushState({}, '', newUrl)
   }
 
   const handleBackToLanding = () => {
     setShowLanding(true)
     setSelectedTopic(null)
+    
+    // Clear URL parameters
+    const newUrl = new URL(window.location.href)
+    newUrl.searchParams.delete('category')
+    window.history.pushState({}, '', newUrl)
   }
 
   const handleTopicChange = (categorySlug) => {
     setSelectedTopic(categorySlug)
+    
+    // Update URL for the new category
+    const newUrl = new URL(window.location.href)
+    newUrl.searchParams.set('category', categorySlug)
+    window.history.pushState({}, '', newUrl)
   }
 
   if (loading) {

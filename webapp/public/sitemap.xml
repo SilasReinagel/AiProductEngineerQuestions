@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+  <!-- Main Landing Page -->
+  <url>
+    <loc>https://ai-interview-guide.com/</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>weekly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  
+  <!-- Category: prompt-engineering -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=prompt-engineering</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: context-engineering -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=context-engineering</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: ai-agent-engineering -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=ai-agent-engineering</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: retrieval-augmented-generation-rag -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=retrieval-augmented-generation-rag</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: ai-model-api-selection-product-lens -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=ai-model-api-selection-product-lens</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: agentic-techniques -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=agentic-techniques</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: model-optimization -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=model-optimization</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: ai-system-evaluation -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=ai-system-evaluation</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: responsible-ai -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=responsible-ai</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: ai-ux-design -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=ai-ux-design</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: feedback-loops -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=feedback-loops</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: rapid-prototyping -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=rapid-prototyping</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  
+  <!-- Category: multimodal-ai -->
+  <url>
+    <loc>https://ai-interview-guide.com/?category=multimodal-ai</loc>
+    <lastmod>2025-08-05</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+
+</urlset>
