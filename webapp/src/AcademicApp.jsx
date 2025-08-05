@@ -11,12 +11,12 @@ import Footer from './components/Footer.jsx'
 /**
  * Landing Page Component
  */
-function LandingPage({ categories, onSelectCategory }) {
+function LandingPage({ sortedCategoriesEntries, onSelectCategory }) {
   return (
     <div className="max-w-4xl mx-auto">
       <MainHero />
       <DomainsSection 
-        categories={categories} 
+        sortedCategoriesEntries={sortedCategoriesEntries} 
         onSelectCategory={onSelectCategory}
       />
     </div>
@@ -114,7 +114,7 @@ function QuestionsView({ categories, questions, selectedTopic, onTopicChange }) 
  * Focus: Interview preparation, skill assessment, practical knowledge building
  */
 function AcademicApp() {
-  const { categories, questions, loading, error } = useQuestionData()
+  const { categories, questions, loading, error, sortedCategoriesEntries } = useQuestionData()
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
 
@@ -163,7 +163,7 @@ function AcademicApp() {
       />
 
       <LeftNavbar 
-        categories={categories}
+        sortedCategoriesEntries={sortedCategoriesEntries}
         selectedTopic={selectedTopic}
         onSelectCategory={handleSelectCategory}
       />
@@ -173,7 +173,7 @@ function AcademicApp() {
         <div className="container mx-auto px-4 py-8">
           {showLanding ? (
             <LandingPage 
-              categories={categories} 
+              sortedCategoriesEntries={sortedCategoriesEntries} 
               onSelectCategory={handleSelectCategory}
             />
           ) : (

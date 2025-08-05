@@ -1,5 +1,5 @@
 {
-  "category": "Feedback-Loop & Data Pipeline Design",
+  "category": "Feedback Loops",
   "questions": {
     "Novice": [
       "Define 'closed-loop learning' and explain why it's valuable for AI systems.",

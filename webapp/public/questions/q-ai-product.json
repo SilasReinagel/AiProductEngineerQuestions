@@ -1,5 +1,5 @@
 {
-  "category": "AI Model & API Selection – Product Lens",
+  "category": "Model Selection",
   "questions": {
     "Novice": [
       "Name three high-level factors you’d weigh before choosing between an external LLM API and a rules-based alternative.",

@@ -4,10 +4,10 @@ import React from 'react'
 /**
  * Domains Section Component
  * @param {Object} props
- * @param {Object} props.categories
+ * @param {Array<[string, Object]>} props.sortedCategoriesEntries
  * @param {(categorySlug: string) => void} props.onSelectCategory
  */
-function DomainsSection({ categories, onSelectCategory }) {
+function DomainsSection({ sortedCategoriesEntries, onSelectCategory }) {
   return (
     <div>
       {/* Domain Overview Cards */}
@@ -16,7 +16,7 @@ function DomainsSection({ categories, onSelectCategory }) {
           Explore Interview Domains
         </h2>
         <div className="grid md:grid-cols-2 gap-4">
-          {Object.entries(categories).map(([slug, category]) => (
+          {sortedCategoriesEntries.map(([slug, category]) => (
             <button
               key={slug}
               onClick={() => onSelectCategory(slug)}
@@ -41,9 +41,9 @@ function DomainsSection({ categories, onSelectCategory }) {
           Each domain includes questions for all experience levels with detailed coverage of essential concepts.
         </p>
         <div className="text-sm text-gray-500">
-          <span className="font-medium">{Object.keys(categories).length}</span> domains • 
+          <span className="font-medium">{sortedCategoriesEntries.length}</span> domains • 
           <span className="font-medium ml-2">
-            {Object.values(categories).reduce((total, cat) => total + Object.values(cat.questions).flat().length, 0)}
+            {sortedCategoriesEntries.reduce((total, [slug, cat]) => total + Object.values(cat.questions).flat().length, 0)}
           </span> questions
         </div>
       </div>

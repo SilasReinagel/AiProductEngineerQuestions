@@ -1,5 +1,6 @@
 {
-  "category": "AI UX & Interaction Design",
+  "category": "AI/UX Design",
+  "sortOrder": 10,
   "questions": {
     "Novice": [
       "Define 'AI transparency' in user interfaces and give one example of transparent design.",

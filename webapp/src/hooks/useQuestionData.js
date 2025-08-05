@@ -1,5 +1,6 @@
 // @ts-check
 import { useState, useEffect } from 'react'
+import { getCategorySortOrder } from '../config/categoryOrder.js'
 
 /**
  * @typedef {Object} Question
@@ -99,6 +100,19 @@ const transformCategoryData = (categoryData, categorySlug) => {
 }
 
 /**
+ * Get categories sorted by the central sort order configuration
+ * @param {Object.<string, CategoryData>} categories - Categories object
+ * @returns {Array<[string, CategoryData]>} Sorted array of [slug, category] entries
+ */
+const getSortedCategoriesEntries = (categories) => {
+  return Object.entries(categories).sort((a, b) => {
+    const sortOrderA = getCategorySortOrder(a[0]) // a[0] is the category slug
+    const sortOrderB = getCategorySortOrder(b[0]) // b[0] is the category slug
+    return sortOrderA - sortOrderB
+  })
+}
+
+/**
  * Custom hook for loading and managing question data
  * @returns {Object} Question data and loading state
  */
@@ -174,10 +188,14 @@ export function useQuestionData() {
     loadQuestionData()
   }, [])
 
+  // Get sorted categories entries
+  const sortedCategoriesEntries = getSortedCategoriesEntries(categories)
+
   return {
     categories,
     questions,
     loading,
-    error
+    error,
+    sortedCategoriesEntries
   }
 } 
