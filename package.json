@@ -1,0 +1,7 @@
+{
+  "name": "ai-product-engineer-questions",
+  "private": true,
+  "scripts": {
+    "dev": "cd webapp && npm run dev"
+  }
+} 
