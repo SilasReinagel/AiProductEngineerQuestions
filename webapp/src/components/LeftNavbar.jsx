@@ -11,7 +11,7 @@ import React from 'react'
 function LeftNavbar({ sortedCategoriesEntries, selectedTopic, onSelectCategory }) {
   return (
     <div className="fixed left-0 top-20 h-[calc(100vh-5rem)] w-80 bg-white z-10 overflow-y-auto scrollbar-none">
-      <div className="py-4 mb-8">
+      <div className="py-4 mb-16">
         <div className="flex flex-col px-3 justify-between">
           <h3 className="font-semibold text-gray-800 mb-0">Quick Start</h3>
           <p className="text-sm text-gray-600 mb-4">

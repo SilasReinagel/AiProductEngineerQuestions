@@ -6,18 +6,18 @@ import React from 'react'
  */
 function MainHero() {
   return (
-    <div className="text-center mb-12">
-      <div className="mb-8">
+    <div className="text-center mb-36">
+      <div className="mb-8 mt-8">
         <img 
           src="/icon.png" 
           alt="AI Interview Guide" 
           className="h-24 w-24 mx-auto mb-6"
         />
-        <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-4">
+        <h1 className="text-4xl md:text-5xl font-serif text-gray-800 mb-8">
           AI Product Engineering Interview Guide
         </h1>
-        <p className="text-xl text-gray-600">
-          Master your AI engineering interviews with curated questions covering all essential domains. 
+        <p className="text-lg text-gray-600 px-12">
+          Master your AI engineering interviews with curated questions covering all essential domains. <br/><br/>
           Perfect for candidates preparing for interviews, hiring managers conducting assessments, 
           and developers building AI product skills.
         </p>
