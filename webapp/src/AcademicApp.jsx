@@ -50,13 +50,20 @@ function AcademicApp() {
       <header className="bg-white border-b-2 border-gray-200 shadow-sm">
         <div className="container mx-auto px-4 py-6">
           <div className="flex items-center justify-between">
-            <div>
-              <h1 className="text-2xl font-serif text-gray-800">
-                AI Product Engineering Interview Guide
-              </h1>
-              <p className="text-sm text-gray-600 mt-1">
-                Essential Questions for AI Engineering Candidates, Hiring Managers, and Skill Development
-              </p>
+            <div className="flex items-center">
+              <img 
+                src="/icon.png" 
+                alt="AI Interview Guide" 
+                className="h-12 w-12 mr-4"
+              />
+              <div>
+                <h1 className="text-2xl font-serif text-gray-800">
+                  AI Product Engineering Interview Guide
+                </h1>
+                <p className="text-sm text-gray-600 mt-1">
+                  Essential Questions for AI Engineering Candidates, Hiring Managers, and Skill Development
+                </p>
+              </div>
             </div>
 
           </div>

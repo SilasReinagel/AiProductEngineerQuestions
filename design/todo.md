@@ -1,5 +1,5 @@
 - Initial Load Experience
-- Favicon
+- ~~Favicon~~ ✅
 - SEO
 - Deploy
 
