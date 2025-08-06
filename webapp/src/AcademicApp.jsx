@@ -194,8 +194,8 @@ function AcademicApp() {
         onSelectCategory={handleSelectCategory}
       />
 
-      {/* Main Content Area - offset by navbar width and header height */}
-      <div className="ml-64 pt-20">
+      {/* Main Content Area - responsive margins */}
+      <div className="lg:ml-64 pt-20">
         <div className="container mx-auto px-4 py-8">
           {showLanding ? (
             <LandingPage 

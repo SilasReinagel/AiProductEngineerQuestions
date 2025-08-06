@@ -38,16 +38,16 @@ function QuestionCard({ question, index, showReferences = false }) {
   
   return (
     <div className="bg-white rounded-lg shadow-lg">
-      <div className="p-6">
-        <div className="flex items-start justify-between mb-4">
-          <div className="flex items-center space-x-3">
-            <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-mono">
+      <div className="p-4 lg:p-6">
+        <div className="flex flex-col sm:flex-row sm:items-start sm:justify-between mb-4 gap-3">
+          <div className="flex flex-wrap items-center gap-2">
+            <span className="bg-gray-100 text-gray-700 px-3 py-1 rounded-full text-sm font-mono flex-shrink-0">
               Q{String(index + 1).padStart(3, '0')}
             </span>
-            <span className={`px-2 py-1 rounded text-xs font-medium ${skillConfig.className}`}>
+            <span className={`px-2 py-1 rounded text-xs font-medium ${skillConfig.className} flex-shrink-0`}>
               {skillConfig.label}
             </span>
-            <span className="text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded">
+            <span className="text-xs text-gray-500 bg-gray-50 px-2 py-1 rounded flex-shrink-0">
               {question.categoryName}
             </span>
           </div>

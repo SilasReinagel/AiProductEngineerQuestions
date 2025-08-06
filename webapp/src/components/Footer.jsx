@@ -12,8 +12,9 @@ function Footer({ questionsCount, categoriesCount }) {
     <footer className="bg-gray-50 border-t border-gray-200 py-8 mt-16">
       <div className="container mx-auto px-4 text-center">
         <p className="text-sm text-gray-700">
-          AI Engineering Interview Guide • {questionsCount} Interview Questions • 
-          {categoriesCount} Categories
+          AI Engineering Interview Guide
+          <span className="hidden sm:inline"> • </span>
+          <span className="block sm:inline">{questionsCount} Interview Questions • {categoriesCount} Categories</span>
         </p>
         <p className="text-xs text-gray-500 mt-2">
           For interview preparation, hiring decisions, and skill development in AI product engineering.

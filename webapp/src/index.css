@@ -64,6 +64,44 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+/* Mobile improvements */
+@media (max-width: 768px) {
+  /* Ensure better touch targets on mobile */
+  button, [role="button"] {
+    min-height: 44px;
+    min-width: 44px;
+  }
+  
+  /* Better text sizing for mobile */
+  h1 {
+    font-size: 2.2em;
+    line-height: 1.2;
+  }
+  
+  /* Prevent horizontal scrolling */
+  body {
+    overflow-x: hidden;
+  }
+  
+  /* Better focus styles for mobile */
+  button:focus,
+  button:focus-visible,
+  input:focus,
+  select:focus {
+    outline: 2px solid #646cff;
+    outline-offset: 2px;
+  }
+}
+
+/* Custom scrollbar for webkit browsers */
+.scrollbar-none {
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.scrollbar-none::-webkit-scrollbar {
+  display: none;
+}
+
 @media (prefers-color-scheme: light) {
   :root {
     color: #213547;
