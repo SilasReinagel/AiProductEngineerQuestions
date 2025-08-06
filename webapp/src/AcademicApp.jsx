@@ -1,6 +1,6 @@
 // @ts-check
 import React, { useState, useEffect } from 'react'
-import { useQuestionData } from './hooks/useQuestionData.js'
+import { useStaticQuestionData } from './hooks/useStaticQuestionData.js'
 import QuestionCard from './components/QuestionCard.jsx'
 import Header from './components/Header.jsx'
 import LeftNavbar from './components/LeftNavbar.jsx'
@@ -114,7 +114,7 @@ function QuestionsView({ categories, questions, selectedTopic, onTopicChange }) 
  * Focus: Interview preparation, skill assessment, practical knowledge building
  */
 function AcademicApp() {
-  const { categories, questions, loading, error, sortedCategoriesEntries } = useQuestionData()
+  const { categories, questions, loading, error, sortedCategoriesEntries } = useStaticQuestionData()
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
 
@@ -158,28 +158,7 @@ function AcademicApp() {
     window.history.pushState({}, '', newUrl)
   }
 
-  if (loading) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-indigo-600 mx-auto mb-4"></div>
-          <p className="text-gray-600">Loading interview questions...</p>
-        </div>
-      </div>
-    )
-  }
-
-  if (error) {
-    return (
-      <div className="min-h-screen bg-gray-50 flex items-center justify-center">
-        <div className="text-center">
-          <div className="text-red-500 text-4xl mb-4">⚠️</div>
-          <h2 className="text-xl font-semibold text-gray-800 mb-2">Loading Error</h2>
-          <p className="text-gray-600">{error}</p>
-        </div>
-      </div>
-    )
-  }
+  // No loading states needed with static compilation!
 
   return (
     <div className="min-h-screen bg-gray-50">
