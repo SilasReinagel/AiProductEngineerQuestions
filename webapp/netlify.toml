@@ -171,6 +171,12 @@
   [headers.values]
     Cache-Control = "public, max-age=31536000, immutable"
 
+# OpenGraph image - longer cache but not immutable for updates
+[[headers]]
+  for = "/og-image.png"
+  [headers.values]
+    Cache-Control = "public, max-age=86400"
+
 # JSON files (question data)
 [[headers]]
   for = "*.json"
