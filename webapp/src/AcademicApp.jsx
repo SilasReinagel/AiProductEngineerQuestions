@@ -9,6 +9,7 @@ import MainHero from './components/MainHero.jsx'
 import DomainsSection from './components/DomainsSection.jsx'
 import Footer from './components/Footer.jsx'
 import About from './components/About.jsx'
+import PressKit from './components/PressKit.jsx'
 
 /**
  * Landing Page Component
@@ -146,6 +147,13 @@ function AcademicApp({ initialView }) {
       return
     }
 
+    if (location.pathname === '/press') {
+      setShowAbout(false)
+      setShowLanding(false)
+      setSelectedTopic(null)
+      return
+    }
+
     const pathCategory = params.categorySlug
     if (pathCategory && categories[pathCategory]) {
       setSelectedTopic(pathCategory)
@@ -220,7 +228,9 @@ function AcademicApp({ initialView }) {
       {/* Main Content Area - responsive margins */}
       <div className="lg:ml-64 pt-20">
         <div className="container mx-auto px-4 py-8">
-          {showAbout ? (
+          {location.pathname === '/press' ? (
+            <PressKit />
+          ) : showAbout ? (
             <About />
           ) : showLanding ? (
             <LandingPage 

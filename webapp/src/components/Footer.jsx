@@ -22,6 +22,7 @@ function Footer({ questionsCount, categoriesCount, onShowAbout }) {
         </p>
         <div className="text-xs text-gray-500 mt-3 space-x-4">
           <button onClick={onShowAbout} className="underline hover:text-gray-700">About/Methodology</button>
+          <a href="/press" className="underline hover:text-gray-700">Press Kit</a>
           <a href="/sitemap.xml" className="underline hover:text-gray-700">Sitemap</a>
           <a href="https://silasreinagel.com" target="_blank" rel="noopener noreferrer" className="underline hover:text-gray-700">Silas Reinagel</a>
         </div>

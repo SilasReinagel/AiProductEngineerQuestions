@@ -7,6 +7,7 @@ import './index.css'
 const router = createBrowserRouter([
   { path: '/', element: <AcademicApp /> },
   { path: '/about', element: <AcademicApp initialView="about" /> },
+  { path: '/press', element: <AcademicApp /> },
   // Category routes map to the same SPA, AcademicApp reads 'category' from URL or path
   { path: '/:categorySlug', element: <AcademicApp /> },
 ])
