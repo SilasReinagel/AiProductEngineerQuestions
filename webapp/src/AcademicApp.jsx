@@ -7,6 +7,7 @@ import LeftNavbar from './components/LeftNavbar.jsx'
 import MainHero from './components/MainHero.jsx'
 import DomainsSection from './components/DomainsSection.jsx'
 import Footer from './components/Footer.jsx'
+import About from './components/About.jsx'
 
 /**
  * Landing Page Component
@@ -117,12 +118,29 @@ function AcademicApp() {
   const { categories, questions, loading, error, sortedCategoriesEntries } = useStaticQuestionData()
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
+  const [showAbout, setShowAbout] = useState(false)
+
+  const scrollToTop = () => {
+    try {
+      window.scrollTo({ top: 0, behavior: 'auto' })
+    } catch {
+      window.scrollTo(0, 0)
+    }
+  }
 
   // Handle URL parameters for direct category access (SEO/sitemap support)
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
     const categoryParam = urlParams.get('category')
+    const aboutParam = urlParams.get('about')
     
+    if (aboutParam === '1') {
+      setShowAbout(true)
+      setShowLanding(false)
+      setSelectedTopic(null)
+      return
+    }
+
     if (categoryParam && categories[categoryParam]) {
       setSelectedTopic(categoryParam)
       setShowLanding(false)
@@ -132,30 +150,54 @@ function AcademicApp() {
   const handleSelectCategory = (categorySlug) => {
     setSelectedTopic(categorySlug)
     setShowLanding(false)
+    setShowAbout(false)
     
     // Update URL for better SEO and bookmarkability
     const newUrl = new URL(window.location.href)
     newUrl.searchParams.set('category', categorySlug)
     window.history.pushState({}, '', newUrl)
+
+    scrollToTop()
   }
 
   const handleBackToLanding = () => {
     setShowLanding(true)
     setSelectedTopic(null)
+    setShowAbout(false)
     
     // Clear URL parameters
     const newUrl = new URL(window.location.href)
     newUrl.searchParams.delete('category')
+    newUrl.searchParams.delete('about')
     window.history.pushState({}, '', newUrl)
+
+    scrollToTop()
   }
 
   const handleTopicChange = (categorySlug) => {
     setSelectedTopic(categorySlug)
+    setShowAbout(false)
     
     // Update URL for the new category
     const newUrl = new URL(window.location.href)
     newUrl.searchParams.set('category', categorySlug)
+    newUrl.searchParams.delete('about')
     window.history.pushState({}, '', newUrl)
+
+    scrollToTop()
+  }
+
+  const handleShowAbout = () => {
+    setShowAbout(true)
+    setShowLanding(false)
+    setSelectedTopic(null)
+
+    const newUrl = new URL(window.location.href)
+    newUrl.searchParams.delete('category')
+    newUrl.searchParams.set('about', '1')
+    window.history.pushState({}, '', newUrl)
+
+    scrollToTop()
   }
 
   // No loading states needed with static compilation!
@@ -165,6 +207,7 @@ function AcademicApp() {
       <Header 
         showLanding={showLanding}
         onBackToLanding={handleBackToLanding}
+        onShowAbout={handleShowAbout}
       />
 
       <LeftNavbar 
@@ -176,7 +219,9 @@ function AcademicApp() {
       {/* Main Content Area - responsive margins */}
       <div className="lg:ml-64 pt-20">
         <div className="container mx-auto px-4 py-8">
-          {showLanding ? (
+          {showAbout ? (
+            <About />
+          ) : showLanding ? (
             <LandingPage 
               sortedCategoriesEntries={sortedCategoriesEntries} 
               onSelectCategory={handleSelectCategory}
@@ -194,6 +239,7 @@ function AcademicApp() {
         <Footer 
           questionsCount={questions.length}
           categoriesCount={Object.keys(categories).length}
+          onShowAbout={handleShowAbout}
         />
       </div>
     </div>
