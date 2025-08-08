@@ -5,7 +5,7 @@ Source: `design/launch.md`. Focused on pre-launch hardening and preparation.
 - [x] About/Methodology page
   - Create a simple page explaining curation approach, taxonomy, and update cadence. Link from header/footer.
 
-- [ ] Press Kit page
+- [x] Press Kit page
   - Include logo, OG images, short description, screenshots, and usage guidelines. Link from footer.
 
 - [ ] Integrate analytics and goals

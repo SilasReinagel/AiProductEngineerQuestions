@@ -177,6 +177,11 @@ function AcademicApp({ initialView }) {
     // Route navigation
     navigate(`/${categorySlug}`)
 
+    try {
+      // @ts-ignore
+      window.plausible && window.plausible('Select Category', { props: { category: categorySlug } })
+    } catch {}
+
     scrollToTop()
   }
 
@@ -205,6 +210,11 @@ function AcademicApp({ initialView }) {
     setSelectedTopic(null)
 
     navigate('/about')
+
+    try {
+      // @ts-ignore
+      window.plausible && window.plausible('View About')
+    } catch {}
 
     scrollToTop()
   }
