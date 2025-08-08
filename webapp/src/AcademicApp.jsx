@@ -1,5 +1,6 @@
 // @ts-check
 import React, { useState, useEffect } from 'react'
+import { useLocation, useNavigate, useParams } from 'react-router-dom'
 import { useStaticQuestionData } from './hooks/useStaticQuestionData.js'
 import QuestionCard from './components/QuestionCard.jsx'
 import Header from './components/Header.jsx'
@@ -114,11 +115,14 @@ function QuestionsView({ categories, questions, selectedTopic, onTopicChange }) 
  * Target: Interview candidates, hiring managers, developers building AI skills
  * Focus: Interview preparation, skill assessment, practical knowledge building
  */
-function AcademicApp() {
+function AcademicApp({ initialView }) {
   const { categories, questions, loading, error, sortedCategoriesEntries } = useStaticQuestionData()
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
   const [showAbout, setShowAbout] = useState(false)
+  const params = useParams()
+  const navigate = useNavigate()
+  const location = useLocation()
 
   const scrollToTop = () => {
     try {
@@ -128,34 +132,42 @@ function AcademicApp() {
     }
   }
 
-  // Handle URL parameters for direct category access (SEO/sitemap support)
+  // Sync state from router path or query params (for backwards compatibility)
   useEffect(() => {
     const urlParams = new URLSearchParams(window.location.search)
-    const categoryParam = urlParams.get('category')
-    const aboutParam = urlParams.get('about')
-    
-    if (aboutParam === '1') {
+    const queryCategory = urlParams.get('category')
+    const queryAbout = urlParams.get('about')
+
+    // Path-based routing has priority
+    if (location.pathname === '/about' || initialView === 'about' || queryAbout === '1') {
       setShowAbout(true)
       setShowLanding(false)
       setSelectedTopic(null)
       return
     }
 
-    if (categoryParam && categories[categoryParam]) {
-      setSelectedTopic(categoryParam)
+    const pathCategory = params.categorySlug
+    if (pathCategory && categories[pathCategory]) {
+      setSelectedTopic(pathCategory)
       setShowLanding(false)
+      setShowAbout(false)
+      return
     }
-  }, [categories])
+
+    if (queryCategory && categories[queryCategory]) {
+      setSelectedTopic(queryCategory)
+      setShowLanding(false)
+      setShowAbout(false)
+    }
+  }, [location.pathname, location.search, params.categorySlug, categories, initialView])
 
   const handleSelectCategory = (categorySlug) => {
     setSelectedTopic(categorySlug)
     setShowLanding(false)
     setShowAbout(false)
     
-    // Update URL for better SEO and bookmarkability
-    const newUrl = new URL(window.location.href)
-    newUrl.searchParams.set('category', categorySlug)
-    window.history.pushState({}, '', newUrl)
+    // Route navigation
+    navigate(`/${categorySlug}`)
 
     scrollToTop()
   }
@@ -165,11 +177,7 @@ function AcademicApp() {
     setSelectedTopic(null)
     setShowAbout(false)
     
-    // Clear URL parameters
-    const newUrl = new URL(window.location.href)
-    newUrl.searchParams.delete('category')
-    newUrl.searchParams.delete('about')
-    window.history.pushState({}, '', newUrl)
+    navigate('/')
 
     scrollToTop()
   }
@@ -178,11 +186,7 @@ function AcademicApp() {
     setSelectedTopic(categorySlug)
     setShowAbout(false)
     
-    // Update URL for the new category
-    const newUrl = new URL(window.location.href)
-    newUrl.searchParams.set('category', categorySlug)
-    newUrl.searchParams.delete('about')
-    window.history.pushState({}, '', newUrl)
+    navigate(`/${categorySlug}`)
 
     scrollToTop()
   }
@@ -192,10 +196,7 @@ function AcademicApp() {
     setShowLanding(false)
     setSelectedTopic(null)
 
-    const newUrl = new URL(window.location.href)
-    newUrl.searchParams.delete('category')
-    newUrl.searchParams.set('about', '1')
-    window.history.pushState({}, '', newUrl)
+    navigate('/about')
 
     scrollToTop()
   }

@@ -111,7 +111,17 @@
   to = "/?category=multimodal-ai"
   status = 200
 
-# SPA redirect - all other routes should serve index.html
+# SPA redirect - prioritize explicit routes first
+[[redirects]]
+  from = "/about"
+  to = "/index.html"
+  status = 200
+
+[[redirects]]
+  from = "/:categorySlug"
+  to = "/index.html"
+  status = 200
+
 [[redirects]]
   from = "/*"
   to = "/index.html"
