@@ -236,7 +236,7 @@ function AcademicApp({ initialView }) {
       />
 
       {/* Main Content Area - responsive margins */}
-      <div className="lg:ml-64 pt-20">
+      <div className="lg:ml-80 pt-20">
         <div className="container mx-auto px-4 py-8">
           {location.pathname === '/press' ? (
             <PressKit />
@@ -261,6 +261,7 @@ function AcademicApp({ initialView }) {
           questionsCount={questions.length}
           categoriesCount={Object.keys(categories).length}
           onShowAbout={handleShowAbout}
+          onSelectCategory={handleSelectCategory}
         />
       </div>
     </div>

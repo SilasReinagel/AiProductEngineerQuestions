@@ -8,11 +8,11 @@ Source: `design/launch.md`. Focused on pre-launch hardening and preparation.
 - [x] Press Kit page
   - Include logo, OG images, short description, screenshots, and usage guidelines. Link from footer.
 
-- [ ] Integrate analytics and goals
-  - Add Plausible/Umami or GA4. Configure goals for outbound clicks, share clicks, and search usage. Verify UTM capture.
+ - [x] Integrate analytics and goals
+   - Plausible integrated with outbound/download/tagged events script and `plausible()` queue in `webapp/index.html`. Goals configured for outbound clicks, share clicks, and search usage. UTM parameters are appended on share URLs and captured by Plausible.
 
-- [ ] UTM discipline and tracking sheet
-  - Define canonical UTM scheme and create a single spreadsheet to track every shared link. Never share bare links.
+- [x] UTM discipline and tracking sheet
+  - Canonical scheme documented in `marketing/README.md`. Source CSV `marketing/utm-links.csv` with generator script `npm run utm:generate` outputs `marketing/dist/utm-links.csv` and `.json` for sharing.
 
 - [ ] Draft and stage launch copy
   - Prepare HN (Show HN) post body, Product Hunt assets/first comment, LinkedIn post, X thread, and subreddit-specific versions.

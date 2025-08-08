@@ -1,7 +1,9 @@
 {
   "name": "ai-product-engineer-questions",
   "private": true,
+  "type": "module",
   "scripts": {
-    "dev": "cd webapp && npm run dev"
+    "dev": "cd webapp && npm run dev",
+    "utm:generate": "node marketing/scripts/generate-utm-links.js"
   }
-} 
+}
