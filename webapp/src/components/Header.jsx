@@ -7,8 +7,9 @@ import React, { useState } from 'react'
  * @param {boolean} props.showLanding
  * @param {() => void} props.onBackToLanding
  * @param {() => void} props.onShowAbout
+ * @param {() => void} [props.onShowStartHere]
  */
-function Header({ showLanding, onBackToLanding, onShowAbout }) {
+function Header({ showLanding, onBackToLanding, onShowAbout, onShowStartHere }) {
   const [shareState, setShareState] = useState(/** @type {null | 'copied' | 'shared' | 'error'} */(null))
 
   const getShareUrl = () => {
@@ -64,6 +65,20 @@ function Header({ showLanding, onBackToLanding, onShowAbout }) {
 
           {/* Actions */}
           <nav className="flex items-center space-x-2 sm:space-x-3">
+            {/* Start Here */}
+            {onShowStartHere && (
+              <button
+                onClick={onShowStartHere}
+                className="inline-flex items-center gap-2 rounded-full border border-emerald-200 bg-emerald-50 px-3 py-2 text-sm text-emerald-700 shadow-sm hover:bg-emerald-100 hover:border-emerald-300 focus:outline-none focus:ring-2 focus:ring-emerald-500/60"
+                title="Start Here Guide"
+              >
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" className="h-4 w-4">
+                  <path strokeLinecap="round" strokeLinejoin="round" d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+                </svg>
+                <span className="hidden sm:inline">Start Here</span>
+              </button>
+            )}
+            
             {/* About */}
             <button
               onClick={onShowAbout}

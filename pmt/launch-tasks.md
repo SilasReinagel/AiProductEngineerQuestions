@@ -20,11 +20,11 @@ Source: `design/launch.md`. Focused on pre-launch hardening and preparation.
 - [ ] Create 3 demo GIFs
   - Short screencasts: scrolling categories, search/filter usage, and mobile view.
 
-- [ ] Footer sitemap links to all 13 categories
-  - Ensure `Footer` includes compact links to each category; cross-link 2 related domains from each category page.
+- [x] Footer sitemap links to all 13 categories
+  - Footer updated with modern design and compact links to all 13 categories. Category buttons use proper navigation handlers like the left nav.
 
-- [ ] "Start Here" guide
-  - Add a hub page that routes beginner → intermediate → expert paths and a section for hiring managers.
+- [x] "Start Here" guide
+  - Created comprehensive guide at `/start-here` with progressive learning paths (beginner → intermediate → expert) and dedicated hiring manager section. Includes clickable category navigation and practical tips.
 
 - [ ] Export social asset images
   - Generate 1200×630 (X/LinkedIn), 1200×1200 (square), and 240×240 (Product Hunt thumbnail).

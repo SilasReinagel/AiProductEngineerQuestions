@@ -10,6 +10,7 @@ import DomainsSection from './components/DomainsSection.jsx'
 import Footer from './components/Footer.jsx'
 import About from './components/About.jsx'
 import PressKit from './components/PressKit.jsx'
+import StartHere from './components/StartHere.jsx'
 
 /**
  * Landing Page Component
@@ -121,6 +122,7 @@ function AcademicApp({ initialView }) {
   const [selectedTopic, setSelectedTopic] = useState(/** @type {string | null} */(null))
   const [showLanding, setShowLanding] = useState(true)
   const [showAbout, setShowAbout] = useState(false)
+  const [showStartHere, setShowStartHere] = useState(false)
   const params = useParams()
   const navigate = useNavigate()
   const location = useLocation()
@@ -143,6 +145,15 @@ function AcademicApp({ initialView }) {
     if (location.pathname === '/about' || initialView === 'about' || queryAbout === '1') {
       setShowAbout(true)
       setShowLanding(false)
+      setShowStartHere(false)
+      setSelectedTopic(null)
+      return
+    }
+
+    if (location.pathname === '/start-here') {
+      setShowStartHere(true)
+      setShowAbout(false)
+      setShowLanding(false)
       setSelectedTopic(null)
       return
     }
@@ -150,6 +161,7 @@ function AcademicApp({ initialView }) {
     if (location.pathname === '/press') {
       setShowAbout(false)
       setShowLanding(false)
+      setShowStartHere(false)
       setSelectedTopic(null)
       return
     }
@@ -159,6 +171,7 @@ function AcademicApp({ initialView }) {
       setSelectedTopic(pathCategory)
       setShowLanding(false)
       setShowAbout(false)
+      setShowStartHere(false)
       return
     }
 
@@ -166,6 +179,7 @@ function AcademicApp({ initialView }) {
       setSelectedTopic(queryCategory)
       setShowLanding(false)
       setShowAbout(false)
+      setShowStartHere(false)
     }
   }, [location.pathname, location.search, params.categorySlug, categories, initialView])
 
@@ -173,6 +187,7 @@ function AcademicApp({ initialView }) {
     setSelectedTopic(categorySlug)
     setShowLanding(false)
     setShowAbout(false)
+    setShowStartHere(false)
     
     // Route navigation
     navigate(`/${categorySlug}`)
@@ -189,6 +204,7 @@ function AcademicApp({ initialView }) {
     setShowLanding(true)
     setSelectedTopic(null)
     setShowAbout(false)
+    setShowStartHere(false)
     
     navigate('/')
 
@@ -198,6 +214,7 @@ function AcademicApp({ initialView }) {
   const handleTopicChange = (categorySlug) => {
     setSelectedTopic(categorySlug)
     setShowAbout(false)
+    setShowStartHere(false)
     
     navigate(`/${categorySlug}`)
 
@@ -207,6 +224,7 @@ function AcademicApp({ initialView }) {
   const handleShowAbout = () => {
     setShowAbout(true)
     setShowLanding(false)
+    setShowStartHere(false)
     setSelectedTopic(null)
 
     navigate('/about')
@@ -214,6 +232,22 @@ function AcademicApp({ initialView }) {
     try {
       // @ts-ignore
       window.plausible && window.plausible('View About')
+    } catch {}
+
+    scrollToTop()
+  }
+
+  const handleShowStartHere = () => {
+    setShowStartHere(true)
+    setShowLanding(false)
+    setShowAbout(false)
+    setSelectedTopic(null)
+
+    navigate('/start-here')
+
+    try {
+      // @ts-ignore
+      window.plausible && window.plausible('View Start Here')
     } catch {}
 
     scrollToTop()
@@ -227,6 +261,7 @@ function AcademicApp({ initialView }) {
         showLanding={showLanding}
         onBackToLanding={handleBackToLanding}
         onShowAbout={handleShowAbout}
+        onShowStartHere={handleShowStartHere}
       />
 
       <LeftNavbar 
@@ -242,6 +277,8 @@ function AcademicApp({ initialView }) {
             <PressKit />
           ) : showAbout ? (
             <About />
+          ) : showStartHere ? (
+            <StartHere onSelectCategory={handleSelectCategory} />
           ) : showLanding ? (
             <LandingPage 
               sortedCategoriesEntries={sortedCategoriesEntries} 
