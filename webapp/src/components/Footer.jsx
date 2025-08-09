@@ -75,7 +75,7 @@ function Footer({ questionsCount, categoriesCount, onShowAbout, onSelectCategory
         </div>
 
         {/* Footer bottom */}
-        <div className="mt-12 pt-8 border-t border-gray-200/80 flex flex-col sm:flex-row justify-between items-start sm:items-center gap-6">
+        <div className="mt-12 pt-8 border-t border-gray-200/80 flex flex-col sm:flex-row justify-between items-center gap-6">
           <div className="flex flex-wrap items-center gap-6 text-sm">
             <a 
               href="/about"

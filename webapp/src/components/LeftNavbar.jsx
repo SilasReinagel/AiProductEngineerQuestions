@@ -21,7 +21,7 @@ function LeftNavbar({ sortedCategoriesEntries, selectedTopic, onSelectCategory }
       {/* Mobile Menu Button */}
       <button
         onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-        className="fixed top-4 left-4 z-30 lg:hidden bg-white rounded-lg shadow-lg p-2 border"
+        className="fixed top-2 left-4 z-30 lg:hidden bg-white rounded-lg shadow-lg p-2 border"
         aria-label="Toggle navigation menu"
       >
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -43,7 +43,7 @@ function LeftNavbar({ sortedCategoriesEntries, selectedTopic, onSelectCategory }
 
       {/* Sidebar */}
       <div className={`
-        fixed left-0 top-20 h-[calc(100vh-5rem)] w-80 bg-white z-30 overflow-y-auto transition-transform duration-300 ease-in-out
+        fixed left-0 top-16 sm:top-20 h-[calc(100vh-4rem)] sm:h-[calc(100vh-5rem)] w-80 bg-white z-30 overflow-y-auto transition-transform duration-300 ease-in-out
         lg:translate-x-0 lg:z-10
         ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'}
       `}>

@@ -271,7 +271,7 @@ function AcademicApp({ initialView }) {
       />
 
       {/* Main Content Area - responsive margins */}
-      <div className="lg:ml-80 pt-20">
+      <div className="lg:ml-80 pt-16 sm:pt-20">
         <div className="container mx-auto px-4 py-8">
           {location.pathname === '/press' ? (
             <PressKit />
