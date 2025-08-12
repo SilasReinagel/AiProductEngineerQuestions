@@ -30,7 +30,7 @@ function PressKit() {
         <h3 className="text-xl font-serif text-gray-900 mb-3">Assets</h3>
         <ul className="divide-y">
           <AssetLink href="/icon.png" label="App Icon (PNG)" note="512x512" />
-          <AssetLink href="/og-image.png" label="Open Graph Image (PNG)" note="1200x630" />
+          <AssetLink href="/og-image.jpg" label="Open Graph Image (PNG)" note="1200x630" />
           <AssetLink href="/favicon-32x32.png" label="Favicon 32x32 (PNG)" />
           <AssetLink href="/favicon-16x16.png" label="Favicon 16x16 (PNG)" />
           <AssetLink href="/android-chrome-192x192.png" label="Android Chrome 192x192 (PNG)" />
@@ -67,7 +67,7 @@ function PressKit() {
       <div className="bg-white rounded-lg shadow p-6 mb-6">
         <h3 className="text-xl font-serif text-gray-900 mb-3">Screenshots</h3>
         <ul className="divide-y">
-          <AssetLink href="/og-image.png" label="Homepage (OG image)" note="1200x630" />
+          <AssetLink href="/og-image.jpg" label="Homepage (OG image)" note="1200x630" />
         </ul>
       </div>
 

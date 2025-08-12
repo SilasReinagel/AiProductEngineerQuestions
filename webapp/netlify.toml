@@ -188,7 +188,7 @@
 
 # OpenGraph image - longer cache but not immutable for updates
 [[headers]]
-  for = "/og-image.png"
+  for = "/og-image.jpg"
   [headers.values]
     Cache-Control = "public, max-age=86400"
 
