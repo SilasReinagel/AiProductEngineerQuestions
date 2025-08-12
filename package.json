@@ -4,6 +4,10 @@
   "type": "module",
   "scripts": {
     "dev": "cd webapp && npm run dev",
+    "build": "cd webapp && npm run build",
+    "preview": "cd webapp && npm run preview",
+    "deploy": "cd webapp && npm run build && npx netlify deploy --prod --dir=dist",
+    "deploy:preview": "cd webapp && npm run build && npx netlify deploy --dir=dist",
     "utm:generate": "node marketing/scripts/generate-utm-links.js"
   }
 }
